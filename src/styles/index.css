@@ -1,0 +1,133 @@
+body {
+    background: #07070F;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 56px 12px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.headerBlur {
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    border-radius: 3.402820018375656e+38px;
+    opacity: 0.2;
+    background: radial-gradient(70.71% 70.71% at 50% 50%, #C44EFF 0%, rgba(196, 78, 255, 0.00) 70%);
+    filter: blur(64px);
+}
+
+.micImageWrapper {
+    position: relative;
+    width: 96px;
+    height: 96px;
+}
+
+.micImageWrapper img {
+    width: 96px;
+    height: 96px;
+    border-radius: 100%;
+}
+
+.playIconWrapper {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background: #00E5FF;
+}
+
+.micImageWrapper div {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+h1 {
+    color: #EDEDFF;
+    text-align: center;
+    font-family: Orbitron;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 32px;
+    letter-spacing: 2.88px;
+    text-transform: uppercase;
+}
+
+.instagram {
+    color: #00E5FF;
+    text-align: center;
+    font-family: Outfit;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 1.12px;
+}
+
+.tags {
+    color: #8080AA;
+    text-align: center;
+    font-family: Outfit;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22.75px;
+}
+
+.metrics {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+}
+
+.metrics div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+
+.metrics span {
+    color: #C44EFF;
+    text-align: center;
+    font-family: Orbitron;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.metrics p {
+    color: #8080AA;
+    text-align: center;
+    font-family: Outfit;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+hr {
+    width: 420px;
+    height: 1px;
+    flex-shrink: 0;
+    color: rgba(196, 78, 255, 0.18);
+    margin: 24px 0px;
+}

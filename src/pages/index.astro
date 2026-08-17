@@ -1,17 +1,57 @@
 ---
+import { Image } from "astro:assets";
+import micImage from "../images/microphone.jpg";
+import PlayIcon from '../icons/play.svg'
 
+import "../styles/css-reset.css";
+import "../styles/index.css";
+import "@fontsource/orbitron";
+import "@fontsource/outfit";
 ---
 
-<html lang="en">
+<html lang="pt">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Nyx Volta</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<header>
+			<div class="headerBlur"/>
+			<div class="micImageWrapper">
+				<Image src={micImage} alt="Microfone" />
+				<div class="playIconWrapper">
+					<PlayIcon />
+				</div>
+			</div>
+			<h1>Nyx Volta</h1>
+			<a class='instagram' href="https://instagram.com/nyxvolta" target="_blank"
+				>@nyxvolta</a
+			>
+			<p class="tags">Produtora musical · Bass eletônico · Dark synth ·<br /> São Paulo, BR</p>
+			<section class="metrics">
+				<div>
+					<span>312K</span>
+					<p>Ouvintes</p>
+				</div>
+				<div>
+					<span>28</span>
+					<p>Lançamentos</p>
+				</div>
+				<div>
+					<span>4</span>
+					<p>Álbuns</p>
+				</div>
+			</section>
+		</header>
+		<hr />
+		<main>
+			<ul>
+				<li></li>
+			</ul>
+		</main>
 	</body>
 </html>
