@@ -1,7 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import micImage from "../images/microphone.jpg";
-import PlayIcon from '../icons/play.svg'
+import { Icon } from "astro-icon/components";
 
 import "../styles/css-reset.css";
 import "../styles/index.css";
@@ -12,7 +12,11 @@ import "@fontsource/outfit";
 <html lang="pt">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}favicon.svg`} />
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href={`${import.meta.env.BASE_URL}favicon.svg`}
+		/>
 		<link rel="icon" href={`${import.meta.env.BASE_URL}favicon.ico`} />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
@@ -20,18 +24,23 @@ import "@fontsource/outfit";
 	</head>
 	<body>
 		<header>
-			<div class="headerBlur"/>
+			<div class="headerBlur"></div>
 			<div class="micImageWrapper">
 				<Image src={micImage} alt="Microfone" />
 				<div class="playIconWrapper">
-					<PlayIcon />
+					<Icon name="mdi:play" />
 				</div>
 			</div>
 			<h1>Nyx Volta</h1>
-			<a class='instagram' href="https://instagram.com/nyxvolta" target="_blank"
-				>@nyxvolta</a
+			<a
+				class="instagram"
+				href="https://instagram.com/nyxvolta"
+				target="_blank">@nyxvolta</a
 			>
-			<p class="tags">Produtora musical · Bass eletônico · Dark synth ·<br /> São Paulo, BR</p>
+			<p class="tags">
+				Produtora musical · Bass eletônico · Dark synth ·<br /> São Paulo,
+				BR
+			</p>
 			<section class="metrics">
 				<div>
 					<span>312K</span>
@@ -49,8 +58,70 @@ import "@fontsource/outfit";
 		</header>
 		<hr />
 		<main>
-			<ul>
-				<li></li>
+			<ul class="links">
+				<li class="featured">
+					<div class="iconWrapper">
+						<Icon name="simple-icons:spotify" height="20" width="20" color="#C44EFF" />
+					</div>
+					<div class="content">
+						<h3>Spotify</h3>
+						<p>Ouça as músicas</p>
+					</div>
+				</li>
+				<li>
+					<div class="iconWrapper">
+						<Icon name="simple-icons:soundcloud" height="20" width="20" color="#8080AA" />
+					</div>
+					<div class="content">
+						<h3>SoundCloud</h3>
+						<p>Beats exclusivos</p>
+					</div>
+				</li>
+				<li>
+					<div class="iconWrapper">
+						<Icon name="simple-icons:youtube" height="20" width="20" color="#8080AA" />
+					</div>
+					<div class="content">
+						<h3>YouTube</h3>
+						<p>Videoclipes e produções</p>
+					</div>
+				</li>
+				<li>
+					<div class="iconWrapper">
+						<Icon name="simple-icons:instagram" height="20" width="20"color="#8080AA" />
+					</div>
+					<div class="content">
+						<h3>Instagram</h3>
+						<p>@nyxvolta</p>
+					</div>
+				</li>
+				<li>
+					<div class="iconWrapper">
+						<Icon name="simple-icons:bandcamp" height="20" width="20" color="#8080AA" />
+					</div>
+					<div class="content">
+						<h3>Bandcamp</h3>
+						<p>Compre a discografia</p>
+					</div>
+				</li>
+				<li>
+					<div class="iconWrapper">
+						<Icon name="simple-icons:discord" height="20" width="20" color="#8080AA" />
+					</div>
+					<div class="content">
+						<h3>Discord</h3>
+						<p>Entre na comunidade</p>
+					</div>
+				</li>
+				<li class="featured">
+					<div class="iconWrapper">
+						<Icon name="lucide:music" height="20" width="20" color="#C44EFF" />
+					</div>
+					<div class="content">
+						<h3>Booking & Shows</h3>
+						<p>Contato para eventos</p>
+					</div>
+				</li>
 			</ul>
 		</main>
 	</body>
