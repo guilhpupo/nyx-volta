@@ -132,6 +132,72 @@ hr {
     margin: 24px 0px;
 }
 
+.newRelease {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 420px;
+    height: 110px;
+    border-radius: 16px;
+    border: 1px solid rgba(0, 229, 255, 0.30);
+    margin-bottom: 24px;
+}
+
+.newRelease img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 420px;
+    height: 110px;
+    border-radius: 16px;
+    z-index: -1;
+}
+
+.newRelease .leftContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+}
+
+.leftContent .playIconWrapper {
+    width: 32px;
+    height: 32px;
+}
+
+.textContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0;
+}
+
+.textContent span {
+    color: #00E5FF;
+font-family: Outfit;
+font-size: 10px;
+font-style: normal;
+font-weight: 600;
+line-height: 15px; 
+letter-spacing: 1px;
+text-transform: uppercase;
+}
+
+.textContent h2 {
+    color: #EDEDFF;
+font-family: Orbitron;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 20px; 
+}
+
+
+
 .links {
     display: flex;
     flex-direction: column;

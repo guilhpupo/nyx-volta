@@ -1,7 +1,9 @@
 ---
 import { Image } from "astro:assets";
-import micImage from "../images/microphone.jpg";
 import { Icon } from "astro-icon/components";
+
+import micImage from "../images/microphone.jpg";
+import newReleaseImage from "../images/new-release-cover.jpg";
 
 import "../styles/css-reset.css";
 import "../styles/index.css";
@@ -28,7 +30,12 @@ import "@fontsource/outfit";
 			<div class="micImageWrapper">
 				<Image src={micImage} alt="Microfone" />
 				<div class="playIconWrapper">
-					<Icon name="mdi:play" />
+					<Icon
+						name="mdi:play"
+						height="16"
+						width="16"
+						color="#07070F"
+					/>
 				</div>
 			</div>
 			<h1>Nyx Volta</h1>
@@ -58,6 +65,25 @@ import "@fontsource/outfit";
 		</header>
 		<hr />
 		<main>
+			<div class="newRelease">
+				<Image src={newReleaseImage} alt="Novo Lançamento" />
+				<div class="leftContent">
+					<div class="playIconWrapper">
+						<Icon
+							name="mdi:play"
+							height="20"
+							width="20"
+							color="#07070F"
+						/>
+					</div>
+					<div class="textContent">
+						<span>Novo lançamento</span>
+						<h2>Void Protocol EP</h2>
+					</div>
+				</div>
+
+				<Icon name="mdi:open-in-new" height="16" width="16" color="#00E5FF99"/>
+			</div>
 			<ul class="links">
 				<li class="featured">
 					<div class="iconWrapper">
