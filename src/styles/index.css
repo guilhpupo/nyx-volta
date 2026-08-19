@@ -147,7 +147,8 @@ hr {
     max-width: 420px;
     height: 1px;
     flex-shrink: 0;
-    color: rgba(196, 78, 255, 0.18);
+    border: none;
+    background-color: rgba(196, 78, 255, 0.18);
     margin: 24px 0px;
 }
 
